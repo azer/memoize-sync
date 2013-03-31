@@ -17,6 +17,7 @@ function work(n){
 }
 
 var memoizedWork = memoize(myfunc)
+
 memoizedWork(10)
 // "doing some work"
 // => 20
@@ -33,4 +34,33 @@ memoizedWork(20);
 
 ```
 
-![](https://dl.dropbox.com/s/9q2p5mrqnajys22/npmel.jpg?token_hash=AAHqttN9DiGl63ma8KRw-G0cdalaiMzrvrOPGnOfDslDjw)
+#### Using Hasher
+
+```js
+var memoizedWork = memoize(work, hasher)
+
+memoizedWork('hello', 'world')
+// doing some work
+
+memoizedWork('hello', 'world')
+// => hello world
+
+memoizedWork('hello', 'kitty')
+// doing some work
+// => hello kitty
+
+memoizedWork('hello', 'kitty')
+// => hello kitty
+
+function hasher(first, last){
+    return first + ', ' + last
+}
+
+function work(first, last){
+    console.log('doing some work')
+
+    return first + ', ' + last
+}
+```
+
+![](http://distilleryimage2.s3.amazonaws.com/3e14d1ae8e4711e2af7822000a1fb04e_6.jpg)
