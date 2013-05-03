@@ -1,6 +1,6 @@
 {
   "name": "memoize-sync",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Return a memoized version of function.",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,8 @@
     "type": "git"
   },
   "author": "Azer Koçulu <azer@kodfabrik.com>",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "strip": "0.0.0"
+  }
 }

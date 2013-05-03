@@ -5,7 +5,13 @@ function memoize(fn, hash){
 
   !hash && ( hash = function(n){ return n; });
 
-  return function memoizedFn(){
+  memoizedFn.reset = function(){
+    mem = {};
+  };
+
+  return memoizedFn;
+
+  function memoizedFn(){
     var key = hash.apply(undefined, arguments);
 
     if( mem.hasOwnProperty(key) ){
