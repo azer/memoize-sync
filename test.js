@@ -1,4 +1,5 @@
-var memoize = require("./");
+var memoize = require("./"),
+    expect = require('chai').expect;
 
 it('returns memoized version of a function', function(){
 
