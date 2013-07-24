@@ -1,4 +1,4 @@
-## memoize-sync
+## memoize-sync [![Build Status](https://travis-ci.org/azer/memoize-sync.png)](https://travis-ci.org/azer/memoize-sync)
 
 Returns a memoized version of a function.
 
@@ -62,5 +62,3 @@ function work(first, last){
     return first + ', ' + last
 }
 ```
-
-![](http://distilleryimage2.s3.amazonaws.com/3e14d1ae8e4711e2af7822000a1fb04e_6.jpg)
