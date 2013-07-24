@@ -7,7 +7,7 @@
     "test": "fox"
   },
   "devDependencies": {
-    "fox": "*"
+    "fox": "1.*"
   },
   "repository": {
     "url": "git@github.com:azer/memoize-sync.git",
