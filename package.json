@@ -4,7 +4,7 @@
   "description": "Return a memoized version of function.",
   "main": "index.js",
   "scripts": {
-    "test": "fox"
+    "test": "mocha"
   },
   "devDependencies": {
     "mocha": "*",
